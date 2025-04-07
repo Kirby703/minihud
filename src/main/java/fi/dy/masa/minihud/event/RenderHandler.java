@@ -1014,7 +1014,7 @@ public class RenderHandler implements IRenderer
             if (InfoToggle.HORSE_JUMP.getBooleanValue() && jump > 0d)
             {
                 double calculatedJumpHeight = 0;
-                while (jump > 0)
+                while (jump > .003)
                 {
                     calculatedJumpHeight += jump;
                     jump = (jump - .08) * .98 * .98;
